@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2//js/bootstrap.min.js"></script>
+
+    <title>Home</title>
+</head>
+<body>
+   <div class="container">
+        <div class="row">
+            <div class="col module-info">
+                <div class="card">
+                    <form id="moduleinfoform">
+                        <div class="form-row">
+                            <h2>Module Information</h2>
+                        </div>
+                        <div class="form-row">
+                            <label for="code">Module Code:</label>
+                            <input id="code" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label for="lecturer">Module Lecturer:</label>
+                            <input id="lecturer" type="text">
+                        </div>
+                        <div class="form-row">
+                            <button type="submit">Add</button>
+                        </div>
+                    </form>
+                    <table>
+                        <thead>
+                            <th>Module Code</th>
+                            <th>Module Lecturer</th>
+                        </thead>
+                        <tbody id="moduleinfotablebody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col task-info">
+                <div class="card">
+                    <form id="taskinfoform">
+                        <div class="form-row">
+                            <h2>Task</h2>
+                        </div>
+                        <div class="form-row">
+                            <label for="taskname">Task Name:</label>
+                            <input id="taskname" type="text">
+                        </div>
+                        <div class="form-row" id="duedateinput">
+                            <label for="duedate">Task Due Date:</label>
+                            <input id="duedate" type="date">
+                        </div>
+                        <div class="form-row">
+                            <button type="submit">Add</button>
+                        </div>
+                    </form>
+                    <table>
+                        <thead>
+                            <th>Task Name</th>
+                            <th>Task Due Date</th>
+                        </thead>
+                        <tbody id="taskinfotablebody">
+                    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6 to-do-list">
+                <div class="card">
+                    <form id="todolistform">
+                        <div class="form-row">
+                            <h2>To Do List</h2>
+                        </div>
+                        <div class="form-row">
+                            <label for="modulecode">Module Code:</label>
+                            <select id="modulecode">
+                               
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="tasktodo">Task:</label>
+                            <select id="tasktodo">
+                              
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="description">Description:</label>
+                            <input id="description" type="text">
+                        </div>
+                        <div class="form-row">
+                            <button type="submit">Add</button>
+                        </div>
+                    </form>
+                    <table id="todolisttable">
+                        <thead>
+                            <th>Module Code</th>
+                            <th>Task</th>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                        </thead>
+                        <tbody id="todolisttabletbody">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="image-credit">
+            Image by <a href="https://pixabay.com/users/geralt-9301/">Gerd Altmann</a> from <a href="https://pixabay.com/illustrations/time-time-management-stopwatch-3216244/">Pixabay</a>
+        </div>
+   </div>
+   <script src="/script.js"></script>
+</body>
+</html>

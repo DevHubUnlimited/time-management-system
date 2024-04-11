@@ -1,0 +1,173 @@
+body{
+    background-image: url('/assets/time-3216244_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-credit {
+    position: fixed;
+    bottom: 4px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    padding-top: 60px; 
+    padding-left: 90px;
+    padding-bottom: 60px;
+}
+
+.card{
+    border: 2px solid darkgreen;
+    border-radius: 8px;
+    padding-top: 22px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    width: 24rem;
+}
+
+.card:hover{
+    box-shadow: 8px 8px 8px rgb(3, 92, 3);
+}
+
+button{
+    margin-top: 4%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(3, 92, 3);
+    padding: 8px 16px;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.custom-table tr:hover {
+    cursor: pointer;
+}
+
+thead, th{
+    background-color: teal;
+    color: white;
+    padding: 2px 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td{
+    padding-left: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#todolisttable tr:nth-child(odd):hover{
+    background: lightcoral;
+    color:white;
+}
+
+.to-do-list{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 280px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for each form row */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style for labels */
+label {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Style for inputs */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    flex: 2;
+    padding: 2px;
+}
+
+select{
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+#duedateinput{
+    margin-top: 11px;
+    margin-bottom: 20px;
+}
+
+input[type="date"]{
+    padding: 2.5px 0px;
+}
+
+/* Media Query for Tablets (768px) */
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 300px;
+    }
+    input[type="text"],
+    input[type="email"], 
+    select,
+    textarea {
+        flex: 1;
+    }
+    .container{
+        display: flex;
+        padding-top: 60px; 
+        padding-left: 13px;
+        padding-right: 10px;
+        padding-bottom: 60px;
+    }
+    .module-info{
+        margin-bottom: 20px;
+    }
+    .task-info{
+        margin-bottom: 20px;
+    }
+    .to-do-list{
+        margin-top: 0px;
+        padding-left: 14px;
+    }
+}
+  
+/* Media Query for Mobile Phones (480px) */
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        padding-top: 60px; 
+        padding-left: auto;
+        padding-right: auto;
+        padding-bottom: 60px;
+    }
+    .module-info{
+        margin-bottom: 20px;
+    }
+    .task-info{
+        margin-bottom: 20px;
+    }
+    .to-do-list{
+        margin-top: 0px;
+        padding-left: 14px;
+    }
+}

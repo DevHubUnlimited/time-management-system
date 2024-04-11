@@ -121,7 +121,7 @@ function addToDoListInfo(event) {
     
     // Get form values
     var toDoItemModuleCode = document.getElementById('modulecode').value;
-    var toDoItemTaskName = document.getElementById('tasktodo');
+    var toDoItemTaskNameElement = document.getElementById('tasktodo');
     var toDoItemTaskName = toDoItemTaskNameElement.options[toDoItemTaskNameElement.selectedIndex].text;
     var toDoItemDescription = document.getElementById('description').value;
 
